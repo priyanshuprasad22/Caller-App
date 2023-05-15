@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Welcome"
+    android:background="@drawable/welcomee">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="40dp"
+        android:id="@+id/linearlayout">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:id="@+id/welcome_image"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/welcomenew"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/AppName"
+            android:text="The Caller App"
+            android:fontFamily="@font/application"
+            android:layout_gravity="center"
+            android:textSize="40sp"
+            android:textColor="@color/blue"
+            />
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearlayout2"
+        android:layout_below="@+id/linearlayout"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/lottie_video_icon"
+            android:layout_width="100dp"
+            android:layout_height="144dp"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/videocall" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Discover a new way to communicate with The Caller App, providing effortless video calls with just a tap."
+            android:textSize="30sp"
+            android:fontFamily="@font/regular_new"
+            android:textColor="@color/white"
+            android:background="#BB75E7"
+            android:padding="10dp"
+            android:id="@+id/discription"/>
+
+
+
+
+
+
+    </LinearLayout>
+
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Let's Begin!"
+        android:layout_marginTop="25dp"
+        android:id="@+id/btn_begin"
+        android:layout_below="@+id/linearlayout2"
+        android:layout_centerHorizontal="true"
+        android:background="@color/blue"
+        android:textColor="@color/white"
+        android:padding="10dp"/>
+
+
+
+</RelativeLayout>

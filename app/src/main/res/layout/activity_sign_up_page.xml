@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".sign_up_page">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/linear_logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp">
+
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            app:lottie_loop="true"
+            app:lottie_autoPlay="true"
+            app:lottie_rawRes="@raw/videocall"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="The Caller App"
+            android:fontFamily="@font/application"
+            android:textSize="35dp"
+            android:layout_marginTop="22dp"
+            android:textColor="@color/blue"/>
+
+
+
+    </LinearLayout>
+
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="20dp"
+        android:background="@drawable/custom_edittext"
+        android:layout_below="@id/linear_logo">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center_horizontal"
+        android:padding="24dp">
+
+       <com.mikhaellopez.circularimageview.CircularImageView
+           android:layout_width="200dp"
+           android:layout_height="200dp"
+           android:layout_gravity="center"
+           android:src="@drawable/baseline_person_24"
+           android:layout_marginTop="10dp"
+           android:id="@+id/profile_pic"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Photo"
+            android:background="@drawable/background"
+            android:textColor="@color/white"
+            android:padding="10dp"
+            android:layout_gravity="center"
+            android:drawableLeft="@drawable/baseline_add_a_photo_24"
+            android:paddingRight="8dp"
+            android:id="@+id/add_photo"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/phone"
+            android:background="@drawable/custom_edittext"
+            android:drawableLeft="@drawable/baseline_call_24"
+            android:drawablePadding="8dp"
+            android:hint="Phone Number"
+            android:padding="8dp"
+            android:textColor="@color/black"
+            android:textColorHighlight="@color/cardview_dark_background"
+            android:layout_marginTop="40dp"
+            android:inputType="number"/>
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:id="@+id/nextButton"
+            android:text="Next"
+            android:textSize="18sp"
+            android:layout_marginTop="30dp"
+            android:backgroundTint="@color/blue"
+            app:cornerRadius="20dp"
+            android:textColor="@color/white"/>
+
+
+    </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

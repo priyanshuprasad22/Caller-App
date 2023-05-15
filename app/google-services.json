@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "814687458706",
+    "project_id": "caller-4b33d",
+    "storage_bucket": "caller-4b33d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:814687458706:android:a54dfc291a964e1867dd4b",
+        "android_client_info": {
+          "package_name": "com.example.caller"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "814687458706-u69gm0cb7vun2iure4csel8jqcdn8nqt.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.caller",
+            "certificate_hash": "594512eab1553b51b6e2597d4841d9d09b0de1c7"
+          }
+        },
+        {
+          "client_id": "814687458706-4q34lbmk1lqujpvihq2kprfj1p74dguj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBd1A-O-YY6zsmpXMv6x2vshK13eyjZB7I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "814687458706-4q34lbmk1lqujpvihq2kprfj1p74dguj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
