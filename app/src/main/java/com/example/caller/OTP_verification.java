@@ -155,11 +155,7 @@ public class OTP_verification extends AppCompatActivity {
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if(task.isSuccessful())
                         {
-                            Toast.makeText(OTP_verification.this,"Success"+mAuth.getUid(),Toast.LENGTH_LONG).show();
-                            Intent intent=new Intent(OTP_verification.this,HomePage.class);
-                            startActivity(intent);
-
-
+                            Toast.makeText(OTP_verification.this,"Success please Login again with details.",Toast.LENGTH_LONG).show();
                         }
                         else
                         {
