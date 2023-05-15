@@ -3,6 +3,7 @@ package com.example.caller;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.ProgressDialog;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
@@ -47,6 +48,8 @@ public class OTP_verification extends AppCompatActivity {
     StorageReference storageReference;
     String username,useremail,userphone,userpassword;
 
+    ProgressDialog progressDialog;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -73,6 +76,10 @@ public class OTP_verification extends AppCompatActivity {
                 }
                 else
                 {
+                    progressDialog=new ProgressDialog(OTP_verification.this);
+                    progressDialog.setTitle("Saving details and Sending OTP...");
+                    progressDialog.show();
+
                     String phone= "+91" + binding.number.getText().toString().trim();
                     signup(username,useremail,userpassword,phone);
                 }
@@ -219,6 +226,7 @@ public class OTP_verification extends AppCompatActivity {
                                 db.collection("images").add(image);
                             }
                             Toast.makeText(OTP_verification.this,"Success",Toast.LENGTH_LONG).show();
+                            progressDialog.dismiss();
                             sendcode(phone);
 
 
